@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            background-image: url('/image3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket-form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .ticket-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .ticket-image img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ticket Management</h1>
+    <div class="ticket-form" style="background-image: url('bg1.jpg');background-size: cover;
+    background-position: center top;">
+        <label for="eventId">Event ID:</label>
+        <input type="number" id="eventId" name="eventId" required><br><br>
+        <label for="userId">User ID:</label>
+        <input type="number" id="userId" name="userId" required><br><br>
+        <button onclick="saveTicket()">Save Ticket</button>
+    </div>
+    <!-- Include any necessary scripts -->
+    <script src="ticket.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* New overall background color */
+    color: #fff;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boundary {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #34495e; /* New background color for the container */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.registration-form { /* New class for the form */
+    background-color: #2c3e50; /* New background color for the form */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button,
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff8c00, #ff6347); /* Different color gradient */
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.button:hover {
+    background: linear-gradient(45deg, #ff6347, #ff8c00); /* Different color gradient on hover */
+}
+
+.login-link,
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.login-link a,
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
